@@ -1,5 +1,11 @@
 n = int(input())
-a, b = 0, 1  # F(0)=0, F(1)=1
-for _ in range(n):
-    a, b = b, a + b
-print(a)
+
+def fibo(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else: 
+        return fibo(n - 1) + fibo(n - 2)
+
+print(fibo(n))

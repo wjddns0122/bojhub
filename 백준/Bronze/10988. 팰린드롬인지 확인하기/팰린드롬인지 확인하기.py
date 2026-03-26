@@ -1,8 +1,6 @@
 n = input()
 
-reversed_n = ''.join(reversed(n))
-
-if n == reversed_n:
-    print(int(1))
+if n == n[::-1]:
+    print("1")
 else:
-    print(int(0))
+    print("0")
